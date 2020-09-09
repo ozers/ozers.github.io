@@ -14,39 +14,36 @@
                 <span class="slider round"></span>
             </label>
         </div>
+        <div class='forms'>
+            <form action="total_calculate" id="price_summary">
 
-        <form action="total_calculate" id="price_summary">
-            <div>
+                <div class="form-row">
+                    <!-- <label for="total_price">Total Price</label> -->
+                    <input type="text" name="total_price" id="total_price" placeholder="Total Price">
+                </div>
 
-            </div>
+                <div class="form-row">
+                    <!-- <label for="discount_price">Discounted Price</label> -->
+                    <input type="text" name="discount_price" id="discount_price" placeholder="Discounted Price">
+                </div>
 
-            <div class="form-row">
-                <!-- <label for="total_price">Total Price</label> -->
-                <input type="text" name="total_price" id="total_price" placeholder="Total Price">
-            </div>
+                <div class="form-row">
+                    <!-- <label for="discount_percent">Discounted Percentage</label> -->
+                    <input type="text" name="discount_percent" id="discount_percent" placeholder="Discounted Percentage">
+                </div>
+            </form>
 
-            <div class="form-row">
-                <!-- <label for="discount_price">Discounted Price</label> -->
-                <input type="text" name="discount_price" id="discount_price" placeholder="Discounted Price">
-            </div>
-
-            <div class="form-row">
-                <!-- <label for="discount_percent">Discounted Percentage</label> -->
-                <input type="text" name="discount_percent" id="discount_percent" placeholder="Discounted Percentage">
-            </div>
-        </form>
-
-        <form action="person" id="person">
-            <div class="form-row">
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="text" name="price" id="price" placeholder='Price'>
-                <input type="text" name="tobe_paid" id="tobe_paid" placeholder="0">
-                <button id="close_button"> 
+            <form action="person" id="person">
+                <div class="form-row">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="text" name="price" id="price" placeholder='Price'>
+                    <input type="text" name="tobe_paid" id="tobe_paid" placeholder="0">
+                    <button id="close_button"> 
                 <span id="x">&#xd7</span>
             </button>
-            </div>
-        </form>
-
+                </div>
+            </form>
+        </div>
         <button id="add">Add more
     </button>
     </div>
